@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chlamydia & Gonorrhea case reporting
+        form</title>
+        <link rel="stylesheet" href="/CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li style="float: left;"><a href="/pages/registration_form.html">Register New Client</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Logout</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="row main-section">
+        <div class="col-3">
+        <nav class="side-nav">
+            <ul>
+                <li>
+                    <!-- Mobile Menu -->
+            <div class="se-dropdown mobile-menu">
+            <button>Menu &#X25BC;</button>
+            <div class="dropdown-content">
+                <a href="/pages/personal_info.html">Personal Information</a>
+                <a href="../pages/risk_factor.html">Risk Factor Information</a>
+                <a href="../pages/hepatitisb_form.html">Hepatitis B</a>
+                <a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a>
+                <a href="/pages/chla_gono_form.html"  class="focus">Chlamydia & Gonorrhea</a>
+            </div>
+               
+
+            </div>
+              </li>
+              <!-- main-side Navigation -->
+                <div class="side-main-nav">
+                <li><a href="/pages/personal_info.html">Personal Information</a></li>
+                <li><a href="../pages/risk_factor.html">Risk Factor Information</a></li>
+                <li><a href="../pages/hepatitisb_form.html">Hepatitis B</a></li>
+                <li><a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a></li>
+                <li> <a href="/pages/chla_gono_form.html" class="focus">Chlamydia & Gonorrhea</a></li>
+               </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-9 forms-section chla-forms">
+        <div>
+            <h2>STI Case Reporting Form for Chlamydia and Gonorrhea</h2>
+            <form action="" method="post" autocomplete="off">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                Clinic Information
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="">
+                                <div>
+                                    <label for="chg-clinic-date"> Date:</label>
+                                    <input type="date" name="chg-clinic-date" id="chg-clinic-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                </div>
+                            </td>
+                            <td colspan="">
+                                <div>
+                                    <label for="chg-clinic-person-form">Person Completing Form:</label>
+                                    <input type="text" name="chg-clinic-person-form" id="chg-clinic-person-form">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="">
+                                <div>
+                                    <label for="chg-clinic-health-p">Health Provider:</label>
+                                    <input type="text" name="chg-clinic-health-p" id="chg-clinic-health-p">
+                                </div>
+                            </td>
+                            <td colspan="">
+                                <div>
+                                    <label for="chg-clinic-contact-tel">Contact phone number/fax:</label>
+                                    <input type="text" name="chg-clinic-contact-tel " id=" chg-clinic-contact-tel">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Your lab reported a communicable disease on the patient shown below and listed you as the provider. 
+                                    The Oregon Department of Human Services and Washington County require additional information.
+                                    The fax cover sheet you have received references Oregon Law (ORS 433) that requires you to report this information.
+                                </p>
+                                <p>
+                                   <b> Please complete the form within 24 hours, or by the end of the next working day, and fax it back to our office at <a href="tel:503-846-3644
+                                    ">503-846-3644</a>.</b> If you prefer you may call to report the required information. 
+                                    We appreciate your cooperation and prompt handling of this confidential report.
+                                </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <th colspan="4"> <b>Patient Information</b> — Please complete all information requested below</th>
+                    </thead>
+                    <tbody>
+                       <tr>
+                         <td>1</td>
+                         <td>
+                            <div>
+                                <label for="chlg-patient-name">Name:</label>
+                                <input type="text" name="chlg-patient-name" id="chlg-patient-name">
+                            </div>
+                         </td>
+                         <td>
+                            <div>
+                                <label for="chlg-patient-birth-date">Date of Birth:</label>
+                                <input type="date" name="chlg-patient-birth-date" id="chlg-patient-birth-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                            </div>
+                         </td>
+                         <td>
+                            <div>
+                                <label for="chlg-patient-gender">Gender</label> <br>
+                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-male">
+                                <label for="chlg-patient-gender-male">Male</label> <br>
+                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-female">
+                                <label for="chlg-patient-gender-female">Female</label> <br>
+                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-other">
+                                <label for="chlg-patient-gender-other">Other</label> <br>
+                            </div>
+                         </td>
+                       </tr>
+                       <tr>
+                        <td rowspan="2">2</td>
+                         <td colspan="3">
+                            <div>
+                                <label for="chlg-patient-home-add">Home Address:</label>
+                                <label for=" chlg-patient-home-add-street">Street</label>
+                                <input type="text" name="chlg-patient-home-add" id="chlg-patient-home-add-street" placeholder="Street Name">
+                                <label for=" chlg-patient-home-add-city">City/State</label>
+                                <input type="text" name="chlg-patient-home-add" id="chlg-patient-home-add-city" placeholder="City/State Name">
+                                <label for=" chlg-patient-home-add-zip">Zip</label>
+                                <input type="number" name="chlg-patient-home-add" id="chlg-patient-home-add-zip" placeholder="Zip code">
+
+                            </div>
+
+                         </td>
+                         
+                       </tr>
+                       <tr>
+                        <td colspan="3">
+                            <div>
+                                <label for="chlg-patient-p-number">Phone Number:</label>
+                                <input type="tel" name="chlg-patient-p-number" id="chlg-patient-p-number"pattern="\d{3}-\d{3}-\d{4}" title="Please enter a phone number in the format xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+                                <label for="chlg-patient-alt-number">Alternative &num; :</label>
+                                <input type="tel" name="chlg-patient-alt-number" id="chlg-patient-alt-number"pattern="\d{3}-\d{3}-\d{4}" title="Please enter a phone number in the format xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>3</td>
+                        <td colspan="3">
+                            <div>
+                                <label for="chlg-patient-p-test">Pregnanct Test Results:</label> <br>
+                                <input type="checkbox" name="chlg-patient-p-test" id="chlg-patient-p-test-n/a">
+                                <label for="chlg-patient-p-test-n/a">N/A</label> <br>
+                                <input type="checkbox" name="chlg-patient-p-test" id="chlg-patient-p-test-neg">
+                                <label for="chlg-patient-p-test-neg">Negative</label> <br>
+                                <input type="checkbox" name="chlg-patient-p-test" id="chlg-patient-p-test-unknown">
+                                <label for="chlg-patient-p-test-unknown">Unknown </label> <br>
+                                <input type="checkbox" name="chlg-patient-p-test" id="chlg-patient-p-test-positive">
+                                <label for="chlg-patient-p-test-positive"> Postive :</label> <br>
+                                <label for="chlg-patient-p-test-weeks"> If positive how many weeks?</label> <br>
+                                <input type="text" name="chlg-patient-p-test" id="chlg-patient-p-test-weeks">
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div>
+                                    <label for="chlg-patient-ethnicity">ETHNICITY:</label> <br>
+                                    <input type="checkbox" id="chlg-patient-ethnicity-hispanic" name="chlg-patient-ethnicity" value="Hispanic">
+                                    <label for="chlg-patient-ethnicity-hispanic" >Hispanic</label> <br>
+                                    <input type="checkbox" id="chlg-patient-ethnicity-nonHispanic" name="chlg-patient-ethnicity" value="Non-Hispanic">
+                                    <label for="chlg-patient-ethnicity-nonHispanic"  >Non-Hispanic</label> <br>
+                                    <input type="checkbox" id="chlg-patient-ethnicity-unknown" name="chlg-patient-ethnicity" value="Unknown">
+                                    <label for="chlg-patient-ethnicity-unknown"  > Unknown</label> <br>
+                                      
+                                    
+                                   
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="chlg-patient-race">RACE:</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-white">
+                                    <label for="chlg-patient-race-white">White</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-black">
+                                    <label for="chlg-patient-race-black">Black</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-asian">
+                                    <label for="chlg-patient-race-asian">Asian</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-am-indian">
+                                    <label for="chlg-patient-race-am-indian">American Indian</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-alask">
+                                    <label for="chlg-patient-race-alask">Alaskan</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-pacific">
+                                    <label for="chlg-patient-race-pacific">Pacific Islander</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-unknown">
+                                    <label for="chlg-patient-race-unknown">Unknown</label> <br>
+                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-other">
+                                    <label for="chlg-patient-race-other">OTHER : </label> <br>
+                                    <input type="text" name="chlg-patient-race" id="chlg-patient-race-other" >
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="chlg-patient-gs-partners">Gender of Sex Partner&lpar;s&rpar;</label> <br>
+                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-male">
+                                    <label for="chlg-patient-gs-partners-male">Male</label> <br>
+                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-female">
+                                    <label for="chlg-patient-gs-partners-female">Female</label> <br>
+                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-both">
+                                    <label for="chlg-patient-gs-partners-both">Both</label> <br>
+                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-unknown">
+                                    <label for="chlg-patient-gs-partners-unknown">Unknown</label> <br>
+                                     
+                                    
+                                    
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div>
+                                    <label for="chlg-patient-test-r">Test Result Type:</label> <br>
+                                    
+                                    <input type="checkbox" name="chlg-patient-test-r" id="chlg-patient-test-r-chla-pr">
+                                    <label for="chlg-patient-test-r-chla-pr">Chlamydia Positive Result</label> 
+                                    
+                                    <label for="chlg-patient-test-r-chla-pr-date">Date:</label> <br>
+                                    <input type="date" name="chlg-patient-test-r" id="chlg-patient-test-r-chla-pr-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy"> <br> 
+
+                                    <input type="checkbox" name="chlg-patient-test-r" id="chlg-patient-test-r-gonopr">
+                                    <label for="chlg-patient-test-r-gonopr">Gonorrhea Positive Results </label> <br>
+                                    
+                                    <label for="chlg-patient-test-r-gonopr-date">Date:</label>  <br>
+                                    <input type="date" name="chlg-patient-test-r" id="chlg-patient-test-r-gonopr-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                </div>
+                                
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <label for="chlg-patient-prev-hivt">Previous Hiv Testing:</label> <br>
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-yes" value="yes">
+                                    <label for="chlg-patient-prev-hivt-yes">Yes</label> <br>
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-no" value="no">
+                                    <label for="chlg-patient-prev-hivt-no">No</label> <br>
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-unknown-1" value="unknown">
+                                    <label for="chlg-patient-prev-hivt-unknown-1">Unknown</label> <br>
+                                    
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-pos" value="Positive">
+                                    <label for="chlg-patient-prev-hivt-pos">Pos</label> <br>
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-neg" value="negative">
+                                    <label for="chlg-patient-prev-hivt-neg">Neg</label> <br>
+                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-unknown-2" value="unknown">
+                                    <label for="chlg-patient-prev-hivt-unknown-2">Unknown</label> <br>
+                                    <label for="chlg-patient-last-rtest">If yes, last result test was?</label> <br>
+                                    <label for="chlg-patient-last-rtest-month-year">Month and year of last test</label> <br>
+                                    <input type="month" name="chlg-patient-last-rtest" id="chlg-patient-last-rtest-month-year" value="month and year">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <div>
+                              <label for="chlg-patient-rf-exam">REASON FOR EXAM :</label> <br>
+                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-symp">
+                              <label for="chlg-patient-rf-exam-symp">Symptomatic</label> <br>
+                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-routine">
+                              <label for="chlg-patient-rf-exam-routine">Routine Exam</label> <br>
+                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-tcure">
+                              <label for="chlg-patient-rf-exam-tcure">Test for Cure</label> <br>
+                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-ex-infect">
+                              <label for="chlg-patient-rf-exam-ex-infect">Exposed to Infection</label> <br>
+                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-preg">
+                              <label for="chlg-patient-rf-exam-preg">Pregnant</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dianosis">
+                                    <label for="chlg-patient-diagnosis">DIAGNOSIS :</label> <br>
+                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-asymp">
+                                    <label for="chlg-patient-diagnosis-asymp">Asymptomatic</label> <br>
+                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-symp-un">
+                                    <label for="chlg-patient-diagnosis-symp-un">Symptomatic-Uncomplicated</label> <br>
+                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-pid">
+                                    <label for="chlg-patient-diagnosis-pid">Pelvic Inflammatory Disease</label> <br>
+                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-oph">
+                                    <label for="chlg-patient-diagnosis-oph">Ophthalmia/conjunctivitis</label> <br>
+                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-dissem">
+                                    <label for="chlg-patient-diagnosis-dissem">Disseminated</label> 
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>
+                                        <label for="chlg-patient-sites">SITE&lpar;S&rpar; :</label> <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-cervix">
+                                        <label for="chlg-patient-sites-cervix">Cervix</label> <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-vaginal">
+                                        <label for="chlg-patient-sites-vaginal">Vaginal</label> <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-urethra">
+                                        <label for="chlg-patient-sites-urethra">Urethra</label> <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-rectum">
+                                        <label for="chlg-patient-sites-rectum">Rectum</label> <br>
+                                    </div>
+                                     <div>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-ocular">
+                                        <label for="chlg-patient-sites-ocular">Ocular</label>  <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-urine">
+                                        <label for="chlg-patient-sites-urine">Urine</label>  <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-pharynx">
+                                        <label for="chlg-patient-sites-ocular-pharynx">Pharynx</label>  <br>
+                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-other">
+                                        <label for="chlg-patient-sites-other">Other:</label> <br>
+                                    </div>
+                                   
+                                </div>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>7</td>
+                            <td colspan="3" class="row">
+                                <div class="col-6">
+                                    <h4 style="background-color: rgba(161, 159, 159,0.5); padding: 10px;">GONORRHEA TREATMENT PLAN:</h4>
+                                    <div>
+                                        <input type="checkbox" name="chlg-patient-gono-t-plan" id="chlg-patient-gono-t-plan-roce">
+                                        <label for="chlg-patient-t-plan-roce"> Recophin/Cefriaxone IM x 1.</label><br>
+                                        <label for="date-gono-t-plan">Date:</label>
+                                        <input type="date" name="date-gono-t-plan" id="date-gono-t-plan" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                     </div>
+                                             <h4 style="text-align: center;">PLUS</h4>
+                                     <div>
+                                       <input type="checkbox" name="chlg-patient-gono-t-plan" id="chlg-patient-gono-t-plan-azith">
+                                       <label for="chlg-patient-t-plan-azith">Azithromycin 1gm orally in a single dose.</label>
+                                     </div>
+                                     <div>
+                                        <h5 style="background-color: rgba(161, 159, 159,0.5); padding: 8px;">Alternative Treatment Regimens</h5>
+                                        <div>
+                                            <input type="checkbox" name="chlg-patient-chla-t-plan" id="chlg-patient-chla-t-plan-cefix">
+                                            <label for="chlg-patient-chla-t-plan-cefix">Cefixime 400mg orally in a single dose.</label>
+                                            <label for="date-chla-t-plan-cefix">Date:</label>
+                                            <input type="date" name="date-chla-t-plan-cefix" id="date-chla-t-plan-cefix" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                         </div>
+                                                 <h4 style="text-align: center;">PLUS</h4>
+                                         <div>
+                                            
+                                                <input type="checkbox" name="chlg-patient-gono-t-plan" id="chlg-patient-gono-t-plan-azith-alt">
+                                                <label for="chlg-patient-t-plan-azith-alt">Azithromycin 1gm orally in a single dose.</label>
+                                     </div>
+                                     <div>
+                                            
+                                        <input type="checkbox" name="chlg-patient-gono-t-plan" id="chlg-patient-gono-t-plan-other">
+                                        <label for="chlg-patient-gono-t-plan-other">Other Treatment:</label>
+                                        <input type="text" name="chlg-patient-gono-t-plan-other" id="chlg-patient-gono-t-plan-other-box" placeholder="Enter other treatment">
+                                        <label for="date-gono-t-plan-other">Date:</label>
+                                    <input type="date" name="date-gono-t-plan-other" id="date-gono-t-plan-other" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                      
+                             </div>
+                                </div>
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="background-color: rgba(161, 159, 159,0.5); padding: 10px;">CHLAMYDIA TREATMENT PLAN:</h4>
+                                    <div>
+                                        <input type="checkbox" name="chlg-patient-chla-t-plan" id="chlg-patient-chla-t-plan-azith">
+                                        <label for="chlg-patient-chla-t-plan-azith">Azithromycin 1gm orally in a single dose.</label>
+                                        <label for="date-chla-t-plan-az">Date:</label>
+                                        <input type="date" name="date-chla-t-plan-az" id="date-chla-t-plan" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                     </div>
+                                             <h4 style="text-align: center;">PLUS</h4>
+                                     <div>
+                                       <input type="checkbox" name="chlg-patient-chla-t-plan" id="chlg-patient-chla-t-plan-doxy">
+                                       <label for="chlg-patient-chla-t-plan-doxy">Doxycycline 100mg BID x 7 days <br/>&lpar;<i>Contraindicated during pregnacy&rpar;</i>.</label> <br>
+                                       <label for="date-chla-t-plan-dx">Date:</label> 
+                                        <input type="date" name="date-chla-t-plan-dx" id="date-chla-t-plan-dx" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                     </div>
+
+                                     <div>
+                                        <h5 style="background-color: rgba(161, 159, 159,0.5); padding: 8px;">Alternative Treatment Regimens</h5>
+                                        <div>
+                                            <input type="checkbox" name="chlg-patient-chla-t-plan" id="chlg-patient-chla-t-plan-amox">
+                                            <label for="chlg-patient-chla-t-plan-amox">Amoxicillin 500mg orally tid x 7days.</label> <br>
+                                            <label for="date-chla-t-plan-amox">Date:</label>
+                                            <input type="date" name="date-chla-t-plan-amox" id="date-chla-t-plan-amox" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                         </div>
+                                                
+                                         <div>
+                                            
+                                                <input type="checkbox" name="chlg-patient-chla-t-plan" id="chlg-patient-chla-t-plan-other">
+                                                <label for="chlg-patient-chla-t-plan-other">Other Treatment:</label>
+                                                <input type="text" name="chlg-patient-chla-t-plan-other" id="chlg-patient-chla-t-plan-other-box" placeholder="Enter other treatment">
+                                                <label for="date-chla-t-plan-other">Date:</label>
+                                            <input type="date" name="date-chla-t-plan-other" id="date-chla-t-plan-other" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                              
+                                     </div>
+                                </div>
+
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td colspan="3">
+                                <div>
+                                    <label for="chlg-patient-notified">IF NOT TREATED YET - PATIENT NOTIFIED OF INFECTION:</label> <br>
+                                    <input type="checkbox" name="chlg-patient-notified" id="chlg-patient-notified-yes">
+                                    <label for="chlg-patient-notified-yes">Yes</label> <br>
+                                    <input type="checkbox" name="chlg-patient-notified" id="chlg-patient-notified-no">
+                                    <label for="chlg-patient-notified-no">No</label> <br>
+                                </div>
+                                <div>
+                                    <label for="chlg-patient-respond">Does the provider need assistance in contacting a client that has not responded for treatment?</label> <br>
+                                    <input type="checkbox" name="chlg-patient-respond" id="chlg-patient-respond-yes">
+                                    <label for="chlg-patient-respond-yes">Yes</label> <br>
+                                    <input type="checkbox" name="chlg-patient-respond" id="chlg-patient-respond-no">
+                                    <label for="chlg-patient-respond-no">No</label> <br>
+                                </div>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td colspan="3" class="row" style="text-align: center;">
+                                <h4 style="background-color: rgba(161, 159, 159,0.5); padding: 10px;">PARTNER MANAGEMENT PLAN - Ensuring Partner Treatment</h4>
+                                <div class="col-12">
+                                    <label for="chlg-patient-mg-therapy">Expedited Partner Therapy dispensed at time of visit?</label><br>
+                                    <input type="checkbox" name="chlg-patient-mg-therapy" id="chlg-patient-mg-therapy-no">
+                                    <label for="chlg-patient-mg-therapy-no">No</label> <br>
+                                    <input type="checkbox" name="chlg-patient-mg-therapy" id="chlg-patient-mg-therapy-yes">
+                                    <label for="chlg-patient-mg-therapy-yes">Yes : How many partners?</label><br>
+                                    <input type="text" name="chlg-patient-mg-therapy-yes" id="chlg-patient-mg-therapy-yes-box">
+
+
+
+                                </div>
+                                <div class="col-12">
+                                    <p>When resources allow the health department will be contacting gonorrhea cases and high risk chlamydia cases to offer partner services.</p>
+                                    <p>Please notify patient that public health worker may be contacting them to offer partner services.</p>
+                                    <div>
+                                        <input type="checkbox" name="chlg-patient-provider" id="chlg-patient-provider">
+                                        <label for="chlg-patient-provider">PROVIDER REQUESTS THAT CLIENT NOT BE CONTACTED BY PUBLIC HEALTH/PROVIDER WILL ASSURE PARTNER TREATMENT</label>
+    
+                                    </div>
+                                    <hr>
+                                    <h4>CURRENT RECOMMENDED TREATMENT- See CDC Guidelines at:  www.cdc.gov/std/treatment/</h4>
+                                </div>
+                                
+                            </td>
+                          </tr>
+                    </tbody>
+                </table>
+                 
+                <button type="submit" class="form-button">Save & Submit</button>
+            </form>
+        </div>
+
+    </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 CDC Standard Forms. All rights reserved.</p>
+          </div>
+    </footer>
+</body>
+</html>

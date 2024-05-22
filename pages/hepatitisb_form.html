@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hepatitis B</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li style="float: left;"><a href="/pages/registration_form.html">Register New Client</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Logout</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="row main-section">
+        <div class="col-3">
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <!-- Mobile Menu -->
+                <div class="se-dropdown mobile-menu">
+                <button>Menu &#X25BC;</button>
+                <div class="dropdown-content">
+                    <a href="/pages/personal_info.html">Personal Information</a>
+                    <a href="../pages/risk_factor.html">Risk Factor Information</a>
+                    <a href="../pages/hepatitisb_form.html" class="focus">Hepatitis B</a>
+                    <a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a>
+                    <a href="/pages/chla_gono_form.html">Chlamydia & Gonorrhea</a>
+                </div>
+                   
+    
+                </div>
+                  </li>
+                  <!-- main-side Navigation -->
+                    <div class="side-main-nav">
+                    <li><a href="/pages/personal_info.html">Personal Information</a></li>
+                    <li><a href="../pages/risk_factor.html">Risk Factor Information</a></li>
+                    <li><a href="../pages/hepatitisb_form.html" class="focus">Hepatitis B</a></li>
+                    <li><a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a></li>
+                    <li> <a href="/pages/chla_gono_form.html">Chlamydia & Gonorrhea</a></li>
+                   </div>
+                </ul>
+            </nav>
+    </div>
+    <!-- Section that hold forms -->
+    <div class="col-9 forms-section">
+         <h2>Hepatitis B Form</h2>
+            <div>
+                <form action="" method="post" autocomplete="off">
+                    <table>
+                        <thead>
+                           <tr>
+                            <th colspan="3">Hepatitis B Infected Pregnant Woman Reporting Form.</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td>
+                                <div>
+                                <label for="hb-l-name">Last Name:</label>
+                                <input type="text" name="hb-l-name" id="hb-l-name">
+                            </div>
+                            </td>
+                            <td>
+                                <div>
+                                <label for="hb-f-name">First Name:</label>
+                                <input type="text" name="hb-f-name" id="hb-f-name">
+                            </div>
+                            </td>
+                            <td>
+                                <div>
+                                <label for="hb-m-name">Middle Name:</label>
+                                <input type="text" name="hb-m-name" id="hb-m-name">
+                            </div>
+                            </td>
+                           </tr>
+                           <tr>
+                            <td>
+                            <div>
+                            <label for="hb-d-birth">Date of Birth: </label>
+                            <input type="date" name="hb-d-birth" id="hb-d-birth" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                             </div>
+                           </td>
+                           <td>
+                            <div>
+                            <label for="hb-est-date">Estimated Delivery Date: </label>
+                            <input type="date" name="hb-est-date" id="hb-est-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                             </div>
+                           </td>
+                           <td>
+                            <div>
+                                <label for="hb-status-awareness">Patient aware of HepB+ Status?</label> <br>
+                                <input type="checkbox" name="hb-status-awareness" id="hb-status-awareness-yes">
+                                <label for="hb-status-awareness-yes">Yes</label> <br>
+                                <input type="checkbox" name="hb-status-awareness" id="hb-status-awareness-no">
+                                <label for="hb-status-awareness-yes">No</label> <br>
+                                <input type="checkbox" name="hb-status-awareness" id="hb-status-awareness-unknown">
+                                <label for="hb-status-awareness-unknown">Unknown</label> <br>
+                                
+                          </div>
+                           </td>
+                           </tr>
+                           <tr>
+                            <td>
+                                <div>
+                                    <label for="hb-address">Address:</label>
+                                    <input type="text" name="hb-address" id="hb-address">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="hb-city">City:</label>
+                                    <input type="text" name="hb-city" id="hb-city">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="hb-state">State:</label>
+                                    <input type="text" name="hb-state" id="hb-state">
+                                </div>
+                                <div>
+                                    <label for="hb-zip">Zip:</label>
+                                    <input type="number" name="hb-zip" id="hb-zip">
+                                </div>
+                            </td>
+                            
+                           </tr>
+                           <tr>
+                            <td>
+                                 <div>
+                                    <label for="hb-tel">Phone Number:</label>
+                                    <input type="tel" name="hb-tel" id="hb-tel"pattern="\d{3}-\d{3}-\d{4}" title="Please enter a phone number in the format xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+                                 </div>
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <label for="hb-insurance-type">Type of Insurance:</label> <br>
+                                    <input type="checkbox" name="hb-insurance-type" id="hb-insurance-type-private">
+                                    <label for="hb-insurance-type-private">Private</label> <br>
+                                    <input type="checkbox" name="hb-insurance-type" id="hb-insurance-type-medicaid">
+                                    <label for="hb-insurance-type-medicaid"> Medicaid</label> <br>
+                                    <input type="checkbox" name="hb-insurance-type" id="hb-insurance-type-medicare">
+                                    <label for="hb-insurance-type-medicare"> Medicare</label> <br>
+                                    <input type="checkbox" name="hb-insurance-type" id="hb-insurance-type-uninsured">
+                                    <label for="hb-insurance-type-uninsured">Uninsured</label> <br>
+                                    <input type="checkbox" name="hb-insurance-type" id="hb-insurance-type-unknown">
+                                    <label for="hb-insurance-type-unknown">Unknown</label>
+
+                                </div>
+                            </td>
+                           </tr>
+                           <tr>
+                            <td colspan="2">
+                                <div>
+                                    <label for="hb-race">Race:</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-am-al">
+                                    <label for="hb-race-am-al">American Indian/Alaskan Native</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-asian">
+                                    <label for="hb-race-asian">Asian</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-b-a">
+                                    <label for="hb-race-b-a">Black/African Am.</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-native">
+                                    <label for="hb-race-native">Native Hawaiian/Pacific Islander</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-white">
+                                    <label for="hb-race-white">White</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-unk">
+                                    <label for="hb-race-unk">Unknown</label> <br>
+                                    <input type="checkbox" name="hb-race" id="hb-race-others">
+                                     <label for="hb-race-others">Others</label> <br>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <label for="hb-hispanic">Hispanic:</label> <br>
+                                    <input type="checkbox" name="hb-hispanic" id="hb-hispanic-yes">
+                                    <label for="hb-hispanic-yes">Yes</label> <br>
+                                    <input type="checkbox" name="hb-hispanic" id="hb-hispanic-no">
+                                    <label for="hb-hispanic-no">No</label> <br>
+                                    <input type="checkbox" name="hb-hispanic" id="hb-hispanic-unk">
+                                    <label for="hb-hispanic-unk">Unknown</label> <br>
+                                </div>
+                            </td>
+                           </tr>
+                           <tr>
+                            <td >
+                                <div>
+                                    <label for="hb-country-birth"> Country of Birth:</label>
+                                    <input type="text" name="hb-country-birth" id="hb-country-birth">
+                                </div>
+                            </td>
+                            <td colspan="2" >
+                                <div>
+                                    <label for="hb-p-language"> Primary Language:</label>
+                                    <input type="text" name="hb-p-languaage" id="hb-p-language">
+                                    <input type="checkbox" name="hb-p-language" id="hb-p-language-interpreter">
+                                    <label for="hb-p-language-interpreter">Check if interpreter Needed.</label> 
+                                   
+
+                                </div>
+                            </td>
+                           </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                            <th colspan="3">Laboratory Information</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td colspan="3">
+                                <div>
+                                    <label for="hb-lab-results"><b>Laboratory Results:</b> check off below any POSITIVE labs and attach positive Hep B lab results.</label> <br>
+                                    <input type="checkbox" name="hb-lab-results[]" id="hb-lab-results-hbsag">
+                                    <label for="hb-lab-results-hbsag">HBsAg &lpar; Hep B surface antigen &rpar;</label> <br>
+                                    <input type="checkbox" name="hb-lab-results[]" id="hb-lab-results-hbeag">
+                                    <label for="hb-lab-results-hbeag"> HBeAg &lpar; Hep Be antigen &rpar;</label> <br>
+                                    <input type="checkbox" name="hb-lab-results[]" id="hb-lab-results-igm">
+                                    <label for="hb-lab-results-igm"> IgM anti-HBc &lpar; IgM antibody to Hep B core antigen &rpar;</label> <br>
+                                    <input type="checkbox" name="hb-lab-results[]" id="hb-lab-results-hbv">
+                                    <label for="hb-lab-results-hbv"> HBV DNA &lpar; Hep B virus DNA &rpar;</label> <br>
+                                </div>
+                            </td>
+                             
+                           </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                           <tr>
+                            <th colspan="3">Clinical Information</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >
+                                    <div>
+                                        <label for="clinical-obp-lname">OB Provider Last Name:</label>
+                                        <input type="text" name="clinical-obp-lname" id="clinical-obp-lname">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <label for="clinical-obp-fname">OB Provider First Name:</label>
+                                        <input type="text" name="clinical-obp-fname" id="clinical-obp-fname">
+                                    </div>
+                                </td>
+                                <td >
+                                    <div>
+                                        <label for="clinical-p-type">Provider Type:</label> <br>
+                                        <input type="checkbox" name="clinical-p-type" id="clinical-p-type-md">
+                                        <label for="clinical-p-type-md">MD/DO</label> <br>
+                                        <input type="checkbox" name="clinical-p-type" id="clinical-p-type-cn">
+                                        <label for="clinical-p-type-cn">CNM/NP</label> <br>
+                                        <input type="checkbox" name="clinical-p-type" id="clinical-p-type-pa">
+                                        <label for="clinical-p-type-pa">PA</label> <br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <label for="clinical-edf">Expected Delivery Facility:</label>
+                                        <input type="text" name="clinical-edf" id="clinical-edf">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <label for="clinical-rhc-facility">Reporting Health Care Facility:</label>
+                                        <input type="text" name="clinical-rhc-facility" id="clinical-rhc-facility">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label for="clinical-address">Address:</label>
+                                        <input type="text" name="clinical-address" id="clinical-address">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <label for="clinical-city">City:</label>
+                                        <input type="text" name="clinical-city" id="clinical-city">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <label for="clinical-state">State:</label>
+                                        <input type="text" name="clinical-state" id="clinical-state">
+                                    </div>
+                                    <div>
+                                        <label for="clinical-zip">Zip:</label>
+                                        <input type="number" name="clinical-zip" id="clinical-zip">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <label for="clinical-contact-p">Contact person at Reporting Facility:</label>
+                                        <input type="text" name="clinical-contact-p" id="clinical-contact-p">
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label for="clinical-d-phone">Direct Phone</label>
+                                        <input type="tel" name="clinical-d-phone" id="clinical-d-phone" pattern="\d{3}-\d{3}-\d{4}" title="Please enter a phone number in the format xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <label for="clinical-comp-date">Date Form Completed: </label>
+                                        <input type="date" name="clinical-comp-date" id="clinical-comp-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                </td>
+                                <td>
+                                    <div>
+                                        <input type="checkbox" name="clinical-p-labs" id="clinical-p-labs">
+                                        <label for="clinical-p-labs"> Positive Labs attached</label>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                     <button type="button" class="form-button">Save & Exit</button>
+                </form>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 CDC Standard Forms. All rights reserved.</p>
+          </div>
+    </footer>
+</body>
+</html>

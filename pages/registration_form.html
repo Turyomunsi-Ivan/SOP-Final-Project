@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New client</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li style="float: left;"><a href="/pages/registration_form.html" class="focus">Register New Client</a></li>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="#" >Logout</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="row main-section">
+        <div class="col-3">
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <!-- Mobile Menu -->
+                <div class="se-dropdown mobile-menu">
+                <button>Menu &#X25BC;</button>
+                <div class="dropdown-content">
+                    <a href="/pages/personal_info.html">Personal Information</a>
+                    <a href="../pages/risk_factor.html">Risk Factor Information</a>
+                    <a href="../pages/hepatitisb_form.html">Hepatitis B</a>
+                    <a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a>
+                    <a href="/pages/chla_gono_form.html">Chlamydia & Gonorrhea</a>
+                </div>
+                   
+    
+                </div>
+                  </li>
+                  <!-- main-side Navigation -->
+                    <div class="side-main-nav">
+                    <li><a href="/pages/personal_info.html">Personal Information</a></li>
+                    <li><a href="../pages/risk_factor.html">Risk Factor Information</a></li>
+                    <li><a href="../pages/hepatitisb_form.html">Hepatitis B</a></li>
+                    <li><a href="/pages/cong_syphilis_form.html">Congenital Syphilis</a></li>
+                    <li> <a href="/pages/chla_gono_form.html">Chlamydia & Gonorrhea</a></li>
+                   </div>
+                </ul>
+            </nav>
+    </div>
+    <div class="col-9 forms-section client">
+        <div>
+            <h2>Register a New Client</h2>
+            <form action="">
+                
+                <div>
+                    <label for="f-name">First Name:</label>
+                    <input type="text" name="f-name" id="f-name" required>
+                </div>
+                <div>
+                    <label for="l-name">Last Name:</label>
+                    <input type="text" name="l-name" id="l-name">
+                </div>
+                <div id="form-client-checkbox">
+                    <label for="sex">Sex:</label> <br>
+                    <input type="checkbox" name="sex" id="sex-male" required>
+                    <label for="sex-male">Male</label> <br>
+                    <input type="checkbox" name="sex" id="sex-female" required>
+                    <label for="sex-female">Female</label> <br>
+                    <input type="checkbox" name="sex" id="sex-intersex" required>
+                    <label for="sex-intersex">Intersex</label>
+                </div>
+                <div>
+                    <label for="Sex-orientation">Sexual Orientation</label>
+                     <select name="Sex-orientation" id="Sex-orientation"  required>
+                        <option  selected disabled>Select from this list </option>
+                        <option value="heterosexual">Heterosexual</option>
+                        <option value="homosexual">Homosexual</option>
+                        <option value="bisexual">Bisexual</option>
+                        <option value="bisexual">Bisexual</option>
+                        <option value="pansexual">Pansexual</option>
+                        <option value="asexual">Asexual</option>
+                        <option value="demisexual">Demisexual</option>
+                        <option value="queer">Queer</option>
+                        <option value="polysexual">Polysexual</option>
+                        <option value="skoliosexual">Skoliosexual</option>
+                        <option value="graysexual ">Graysexual </option>
+                     </select>
+                </div>
+                <div>
+                    <label for="yearOfBirth">Year of Birth:</label>
+                    <input type="number" id="yearOfBirth" name="yearOfBirth" min="1900" max="2024" required  placeholder="Enter year of birth">
+                     
+                </div>
+                <div>
+                    <label for="unique-id">Unique ID:</label>
+                    <input type="password" name="unique-id" id="unique-id" required placeholder="Create a Unique ID">
+                    <input type="password" name="unique-id" id="unique-id-confirm" required placeholder="Confirm Unique ID">
+                     
+                </div>
+                <div>
+               <input type="submit" value="register"  id="register">  
+            </div>
+                   
+            </form>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 CDC Standard Forms. All rights reserved.</p>
+          </div>
+    </footer>
+</body>
+</html>
