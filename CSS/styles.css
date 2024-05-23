@@ -1,176 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    a{
+
+    a {
         text-decoration: none;
         color: blue;
     }
-    li{
+
+    li {
         list-style-type: none;
         display: block;
     }
-}
-body{
-    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     
 }
-p,h1,h2,h3,h4,h5,h6{
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: .5rem 0;
 }
+
 /* Styles for the rows */
-.row{
-    border:1px solid black;
+.row {
+    border: 1px solid black;
     margin-bottom: 1rem;
 }
 
 /* Fieldset styles */
-fieldset{
+fieldset {
     border: none;
 }
-legend{
-    background-color:rgba(161, 159, 159,0.5) ;
+
+legend {
+    background-color: rgba(161, 159, 159, 0.5);
     padding: .6rem;
 }
+
 /* Header styles */
 .header {
-    background-color:#111d61e8 ;
-    position: relative;
+    background-color: #111d61e8;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-   
+    justify-content: center;
+    height: 70px;
+     width: 100%;
+
+
+}
+
+.header>h2 {
+    color:white;
+    font-size: 20px;
     
-  }
-  .header h2{
-    color: #fff;
-    position: relative; 
-    z-index: 3; 
+     
   
 
-  }
-   
 
-   
-    
+}
+
+
+
+
 
 /* Navigation */
-.top-nav{
+.top-nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height:60px ;
+    height: 60px;
     background-color: #111d61e8;
     z-index: 1;
     width: 100%;
-   
+
 }
-.top-nav a{
+
+.top-nav a {
     padding: .6rem;
-    color:#fff;
+    color: #fff;
     float: right;
     text-align: center;
-    margin:.6rem 1rem 0 0 ;
+    margin: .6rem 1rem 0 0;
     font-size: 1.2rem;
 }
-.top-nav a:hover{
-    background-color: rgb(246, 180, 47); 
+
+.top-nav a:hover {
+    background-color: rgb(246, 180, 47);
     border-radius: 10px;
     color: #fff;
 }
 
- 
+
 /* Side Navigation Styles */
-.side-nav{
+.side-nav {
     padding: 0;
     margin: 0;
     position: fixed;
     top: 100px;
 }
-.side-nav button{
+
+.side-nav button {
     border: 1px solid #fff;
 }
-.side-nav li{
-   margin-bottom: .6rem;
+
+.side-nav li {
+    margin-bottom: .6rem;
     border: 1px solid #fff;
 
 }
-.side-nav a , .side-nav button, .mobile-menu{
+
+.side-nav a,
+.side-nav button,
+.mobile-menu {
     font-weight: bold;
     display: inline-block;
     width: 100%;
-    background-color:#111d61e8;
+    background-color: #111d61e8;
     color: #fff;
     padding: 8px 12px;
     font-size: 17px;
     text-align: center;
     border-radius: 12px;
 }
-.side-nav a:hover , .side-nav button:hover{
+
+.side-nav a:hover,
+.side-nav button:hover {
     background-color: rgb(246, 180, 47);
 }
- 
+
 
 /* Mobile menu */
-.side-nav .mobile-menu{
-  display: none;
+.side-nav .mobile-menu {
+    display: none;
 }
-.focus{
+
+.focus {
     background-color: rgba(29, 126, 174, 0.979);
     border-radius: 10px;
-    
-  }
-h2{
+
+}
+
+h2 {
     text-align: center;
     font-size: 18px;
     padding: 10px;
 }
 
 /* Home section */
-.home-section{
+.home-section {
     position: relative;
     top: 90px;
-    background-color: rgb(255,240,229); 
+    background-color: rgb(255, 240, 229);
     padding: 1.5rem;
     margin: 0 1.5rem;
     border-radius: 10px;
 }
-.main-section{
+
+.main-section {
     position: relative;
     top: 100px;
     padding: 1.5rem;
     border: none;
 }
-.col-5{
-    
+
+.col-5 {
+
     background-color: rgb(255, 255, 251);
     border-radius: 15px;
     text-align: center;
-  
+
 
 }
-.login-form label,span{
-    display:block;
+
+.login-form label,
+span {
+    display: block;
     margin: 1rem 0 .4rem 0;
 }
-.login-form label{
+
+.login-form label {
     display: none;
-    
+
 }
- .login-form input{
+
+.login-form input {
     width: 80%;
     padding: .6rem;
     border: none;
     border-bottom: 1px solid #4CAF50;
     outline: none;
     margin-bottom: 1rem;
- 
- }
-  
- /* login button */
- .login-form input[type="submit"]{
+
+}
+
+/* login button */
+.login-form input[type="submit"] {
     border: none;
     padding: .6rem;
     width: 35%;
@@ -179,58 +214,66 @@ h2{
     background-color: rgb(246, 180, 47);
     color: #fff;
     cursor: pointer;
-    
- }
+
+}
 
 /* Introduction section */
-.welcome-note{
-    
+.welcome-note {
+
     color: rgb(9, 9, 2);
- 
+
 }
 
 /* main form section */
-.forms-section{
-  
-    background-color: rgba(255,240,229,0.4);
+.forms-section {
+
+    background-color: rgba(255, 240, 229, 0.4);
     border-radius: 20px;
     box-shadow: 3px 3px 5px #111d61e8;
 }
-  form{
+
+form {
     max-width: 100%;
     margin: 0 auto;
- }
+}
+
 /* Styles for tables */
-table{
+table {
     margin-bottom: 2rem;
     border-collapse: collapse;
     width: 100%;
     border: 1px solid black;
 }
-th{
+
+th {
     padding: .6rem;
-    background-color: rgba(161, 159, 159,0.5);
-  
+    background-color: rgba(161, 159, 159, 0.5);
+
 }
-td{
+
+td {
     padding: 1rem;
+    margin-top: .5rem;
 }
-tr,td{
+
+tr,
+td {
     border: 1px solid black;
 }
 
 
 /* table forms */
-.dignosis{
-    display: flex;   
+.dignosis {
+    display: flex;
 }
-.dignosis label{
+
+.dignosis label {
     flex-direction: column;
 }
 
-     
-  /* styles for the register button */
-   .client input[type="submit"]{
+
+/* styles for the register button */
+.client input[type="submit"] {
     position: relative;
     margin-left: 17rem;
     margin-top: 2rem;
@@ -242,43 +285,49 @@ tr,td{
     color: #fff;
     cursor: pointer;
 
-   }
- /* Styles for the checkbox, and radio */
- .forms-section input[type="radio"] + label,
- .forms-section input[type="checkbox"] + label{
-        
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: .6rem;
-            
-        
-        }
+}
 
-  
+/* Styles for the checkbox, and radio */
+.forms-section input[type="radio"]+label,
+.forms-section input[type="checkbox"]+label {
 
- /* Style for text, number,tel,email and date inputs */
- .forms-section input[type="text"],
- .forms-section input[type="number"],
- .forms-section input[type="date"],
- .forms-section input[type="tel"],
- .forms-section input[type="email"],
- .forms-section input[type="password"],
- .forms-section input[type="month"],
- .forms-section select{
-     border: 2px solid #4CAF50; /* Green border */
-     padding: 10px;
-     border-radius: 5px;
-     width: 100%; /* Full width */
-     margin: 10px 0; /* Space between inputs */
- }
- .forms-section label{
-    display:inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: .6rem;
+
+
+}
+
+
+
+/* Style for text, number,tel,email and date inputs */
+.forms-section input[type="text"],
+.forms-section input[type="number"],
+.forms-section input[type="date"],
+.forms-section input[type="tel"],
+.forms-section input[type="email"],
+.forms-section input[type="password"],
+.forms-section input[type="month"],
+.forms-section select {
+    border: 2px solid #4CAF50;
+    /* Green border */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    /* Full width */
+    margin: 10px 0;
+    /* Space between inputs */
+}
+
+.forms-section label {
+    display: inline-block;
     font-weight: 600;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     width: auto;
- }
- /* Form buttons */
- .form-button{
+}
+
+/* Form buttons */
+.form-button {
     border: none;
     padding: .6rem;
     width: 20%;
@@ -288,11 +337,11 @@ tr,td{
     color: #fff;
     cursor: pointer;
     text-align: center;
- }
- 
-  
- /* Footer styles */
-.footer-container{
+}
+
+
+/* Footer styles */
+.footer-container {
     background-color: #343a40;
     padding: 1rem;
     text-align: center;
@@ -300,69 +349,111 @@ tr,td{
     top: 150px;
     color: #fff;
 }
+
 /* grid rows */
 /* Remove padding-top from .row::after */
 .row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  
-  /* Remove width: 100% from columns */
-  [class*="col-"] {
+}
+
+/* Remove width: 100% from columns */
+[class*="col-"] {
     float: left;
     padding: 10px;
     width: 100%;
-  }
-  
-  /* Define column widths using media queries */
-  @media only screen and (min-width: 768px) {
-    .col-1 { width: 8.33%; }
-    .col-2 { width: 16.66%; }
-    .col-3 { width: 25%; }
-    .col-4 { width: 33.33%; }
-    .col-5 { width: 41.66%; }
-    .col-6 { width: 50%; }
-    .col-7 { width: 58.33%; }
-    .col-8 { width: 66.66%; }
-    .col-9 { width: 75%; }
-    .col-10 { width: 83.33%; }
-    .col-11 { width: 91.66%; }
-    .col-12 { width: 100%; }
-     /* mobile menu */
-   
-    
-     
-  }
-   /* Define column widths using media queries */
-  @media only screen and (max-width: 768px){
-        /* mobile menu */
-    .side-nav .mobile-menu{
+}
+
+/* Define column widths using media queries */
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    /* mobile menu */
+
+
+
+}
+
+/* Define column widths using media queries */
+@media only screen and (max-width: 768px) {
+
+    /* mobile menu */
+    .side-nav .mobile-menu {
         display: block;
         z-index: 4;
-         
-      }
-      .side-nav .dropdown-content{
-        display:none;
-     }
-      .mobile-menu:hover .dropdown-content {
-        display: block;
-         z-index: 4;
-         
-    
-      }
-    
-      .side-main-nav {
+
+    }
+
+    .side-nav .dropdown-content {
         display: none;
-      }
-      td {
+    }
+
+    .mobile-menu:hover .dropdown-content {
+        display: block;
+        z-index: 4;
+
+
+    }
+
+    .side-main-nav {
+        display: none;
+    }
+
+    td {
         display: block;
         width: auto;
-        
+
     }
-    td > div {
+
+    td>div {
         margin-bottom: 10px;
     }
-    
+
 }
-  
