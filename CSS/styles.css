@@ -5,7 +5,7 @@
 
     a {
         text-decoration: none;
-        color: blue;
+        color:rgb(247, 231, 201);
     }
 
     li {
@@ -48,7 +48,7 @@ legend {
 }
 
 /* Header styles */
-.header {
+/* .header {
     background-color: #111d61e8;
     position: fixed;
     display: flex;
@@ -57,9 +57,9 @@ legend {
      width: 100%;
 
 
-}
+} */
 
-.header>h2 {
+/* .header>h2 {
     color:white;
     font-size: 20px;
     
@@ -67,7 +67,7 @@ legend {
   
 
 
-}
+} */
 
 
 
@@ -80,7 +80,7 @@ legend {
     left: 0;
     right: 0;
     height: 60px;
-    background-color: #111d61e8;
+    background-color: rgb(85, 124, 183);
     z-index: 1;
     width: 100%;
 
@@ -126,7 +126,7 @@ legend {
     font-weight: bold;
     display: inline-block;
     width: 100%;
-    background-color: #111d61e8;
+    background-color: rgb(85, 124, 183);
     color: #fff;
     padding: 8px 12px;
     font-size: 17px;
@@ -151,21 +151,32 @@ legend {
 
 }
 
-h2 {
+h1,h2,h3,h4,h5 {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
+    font-family: Helvetica, Tahoma, Arial, sans-serif;
 }
 
 /* Home section */
 .home-section {
     position: relative;
     top: 90px;
-    background-color: rgb(255, 240, 229);
     padding: 1.5rem;
     margin: 0 1.5rem;
     border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px #fff;
+     
+    
 }
+.home-section h1{
+    font-size: 35px;
+    line-height: 30px;
+}
+ 
 
 .main-section {
     position: relative;
@@ -174,14 +185,7 @@ h2 {
     border: none;
 }
 
-.col-5 {
-
-    background-color: rgb(255, 255, 251);
-    border-radius: 15px;
-    text-align: center;
-
-
-}
+ 
 
 .login-form label,
 span {
@@ -195,12 +199,13 @@ span {
 }
 
 .login-form input {
-    width: 80%;
+    width: 100%;
     padding: .6rem;
     border: none;
     border-bottom: 1px solid #4CAF50;
     outline: none;
     margin-bottom: 1rem;
+    border-radius: 10px;
 
 }
 
@@ -208,22 +213,20 @@ span {
 .login-form input[type="submit"] {
     border: none;
     padding: .6rem;
-    width: 35%;
+    width: 50%;
     border-radius: 5px;
     margin: .6rem;
     background-color: rgb(246, 180, 47);
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
 
 }
-
-/* Introduction section */
-.welcome-note {
-
-    color: rgb(9, 9, 2);
-
+.login-form{
+    margin-top: 3rem;
 }
 
+ 
 /* main form section */
 .forms-section {
 
@@ -346,7 +349,7 @@ td {
     padding: 1rem;
     text-align: center;
     position: relative;
-    top: 150px;
+    top: 170px;
     color: #fff;
 }
 
@@ -365,6 +368,9 @@ td {
     width: 100%;
 }
 
+li a:link{
+    color:#4CAF50;
+}
 /* Define column widths using media queries */
 @media only screen and (min-width: 768px) {
     .col-1 {
@@ -421,7 +427,7 @@ td {
 
 }
 
-/* Define column widths using media queries */
+/*  media queries for Screens <= 768px */
 @media only screen and (max-width: 768px) {
 
     /* mobile menu */
