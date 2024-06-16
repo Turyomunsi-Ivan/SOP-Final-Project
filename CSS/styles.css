@@ -5,7 +5,7 @@
 
     a {
         text-decoration: none;
-        color:rgb(247, 231, 201);
+        color:#F4D0CD;
     }
 
     li {
@@ -46,7 +46,10 @@ legend {
     background-color: rgba(161, 159, 159, 0.5);
     padding: .6rem;
 }
-
+ /* Form error catcher */
+ span{
+    color: red;
+ }
 /* Header styles */
 /* .header {
     background-color: #111d61e8;
@@ -80,7 +83,7 @@ legend {
     left: 0;
     right: 0;
     height: 60px;
-    background-color: rgb(85, 124, 183);
+    background-color: #111d61e8;
     z-index: 1;
     width: 100%;
 
@@ -126,7 +129,7 @@ legend {
     font-weight: bold;
     display: inline-block;
     width: 100%;
-    background-color: rgb(85, 124, 183);
+    background-color: #111d61e8;
     color: #fff;
     padding: 8px 12px;
     font-size: 17px;
@@ -228,6 +231,13 @@ span {
 
  
 /* main form section */
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-control.error input{
+    border-color: rgb(237, 23, 23);
+}
 .forms-section {
 
     background-color: rgba(255, 240, 229, 0.4);
@@ -312,8 +322,8 @@ td {
 .forms-section input[type="password"],
 .forms-section input[type="month"],
 .forms-section select {
-    border: 2px solid #4CAF50;
-    /* Green border */
+    border: 2px solid #9da09d;
+   
     padding: 10px;
     border-radius: 5px;
     width: 100%;
@@ -368,9 +378,9 @@ td {
     width: 100%;
 }
 
-li a:link{
+/* li a:link{
     color:#4CAF50;
-}
+} */
 /* Define column widths using media queries */
 @media only screen and (min-width: 768px) {
     .col-1 {

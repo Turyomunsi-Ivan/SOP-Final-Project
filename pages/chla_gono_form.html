@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chlamydia & Gonorrhea case reporting
         form</title>
-        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -52,9 +52,9 @@
         </nav>
     </div>
     <div class="col-9 forms-section chla-forms">
-        <div>
+        <div class="form-control">
             <h2>STI Case Reporting Form for Chlamydia and Gonorrhea</h2>
-            <form action="" method="post" autocomplete="off">
+            <form action="" method="get" autocomplete="off" name="chlamydiaForm" id ="chlamForm"   novalidate>
                 <table>
                     <thead>
                         <tr>
@@ -67,28 +67,28 @@
                         <tr>
                             <td colspan="">
                                 <div>
-                                    <label for="chg-clinic-date"> Date:</label>
-                                    <input type="date" name="chg-clinic-date" id="chg-clinic-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                    <label for="chgClinicDate"> Date:</label>
+                                    <input type="date" name="chgClinicDate" id="chgClinicDate" pattern="\d{2} \d{2} \d{4}"  placeholder="mm/dd/yyyy" onblur=" return checkInputs()" /><span id="dateErr"></span>
                                 </div>
                             </td>
                             <td colspan="">
                                 <div>
-                                    <label for="chg-clinic-person-form">Person Completing Form:</label>
-                                    <input type="text" name="chg-clinic-person-form" id="chg-clinic-person-form">
+                                    <label for="personCompletingForm">Person Completing Form:</label>
+                                    <input type="text" name="personCompletingForm" id="personCompletingForm" onblur=" return checkInputs()" ><span id="personCompletingFormErr" ></span>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="">
                                 <div>
-                                    <label for="chg-clinic-health-p">Health Provider:</label>
-                                    <input type="text" name="chg-clinic-health-p" id="chg-clinic-health-p">
+                                    <label for="healthProvider">Health Provider:</label>
+                                    <input type="text" name="healthProvider" id="healthProvider"><span id="healthProviderErr" onblur=" return checkInputs()"></span>
                                 </div>
                             </td>
                             <td colspan="">
                                 <div>
-                                    <label for="chg-clinic-contact-tel">Contact phone number/fax:</label>
-                                    <input type="text" name="chg-clinic-contact-tel " id=" chg-clinic-contact-tel">
+                                    <label for="patientContact">Contact phone number/fax:</label>
+                                    <input type="text" name="patientContact" id="patientContact" onblur=" return checkInputs()"><span id="contactErr"> </span>
                                 </div>
                             </td>
                         </tr>
@@ -118,25 +118,25 @@
                          <td>1</td>
                          <td>
                             <div>
-                                <label for="chlg-patient-name">Name:</label>
-                                <input type="text" name="chlg-patient-name" id="chlg-patient-name">
+                                <label for="patientName">Name:</label>
+                                <input type="text" name="patientName" id="patientName" onblur=" return checkInputs()"><span id="patientNameErr"></span>
                             </div>
                          </td>
                          <td>
                             <div>
-                                <label for="chlg-patient-birth-date">Date of Birth:</label>
-                                <input type="date" name="chlg-patient-birth-date" id="chlg-patient-birth-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                <label for="patientBirthDate">Date of Birth:</label>
+                                <input type="date" name="patientBirthDate" id="patientBirthDate" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy"><span id="patientBirthDateErr"></span>
                             </div>
                          </td>
                          <td>
                             <div>
-                                <label for="chlg-patient-gender">Gender</label> <br>
-                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-male">
-                                <label for="chlg-patient-gender-male">Male</label> <br>
-                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-female">
-                                <label for="chlg-patient-gender-female">Female</label> <br>
-                                <input type="checkbox" name="chlg-patient-gender" id="chlg-patient-gender-other">
-                                <label for="chlg-patient-gender-other">Other</label> <br>
+                                <label for="patientGender">Gender</label> <br>
+                                <input type="checkbox" name="patientGender" id=" patientGenderMale">
+                                <label for="patientGenderMale">Male</label> <br>
+                                <input type="checkbox" name="patientGender" id="patientGenderFemale">
+                                <label for="patientGenderFemale">Female</label> <br>
+                                <input type="checkbox" name="patientGender" id="patientGenderOther">
+                                <label for="patientGenderOther">Other</label> <br> <span id="patientGenderErr"></span>
                             </div>
                          </td>
                        </tr>
@@ -189,13 +189,13 @@
                             <td>4</td>
                             <td>
                                 <div>
-                                    <label for="chlg-patient-ethnicity">ETHNICITY:</label> <br>
-                                    <input type="checkbox" id="chlg-patient-ethnicity-hispanic" name="chlg-patient-ethnicity" value="Hispanic">
-                                    <label for="chlg-patient-ethnicity-hispanic" >Hispanic</label> <br>
-                                    <input type="checkbox" id="chlg-patient-ethnicity-nonHispanic" name="chlg-patient-ethnicity" value="Non-Hispanic">
-                                    <label for="chlg-patient-ethnicity-nonHispanic"  >Non-Hispanic</label> <br>
-                                    <input type="checkbox" id="chlg-patient-ethnicity-unknown" name="chlg-patient-ethnicity" value="Unknown">
-                                    <label for="chlg-patient-ethnicity-unknown"  > Unknown</label> <br>
+                                    <label for="patientEthnicity">ETHNICITY:</label> <br>
+                                    <input type="checkbox" id="patientEthnicityHispanic" name="patientEthnicity" value="Hispanic">
+                                    <label for="patientEthnicityHispanic" >Hispanic</label> <br>
+                                    <input type="checkbox" id="patientEthnicityNonHispanic" name="patientEthnicity" value="Non-Hispanic">
+                                    <label for="patientEthnicityNonHispanic"  >Non-Hispanic</label> <br>
+                                    <input type="checkbox" id="patientEthnicityUnknown" name="patientEthnicity" value="Unknown">
+                                    <label for="patientEthnicityUnknown"  > Unknown</label> <br> <span id = "patientEthnicityErr"></span>
                                       
                                     
                                    
@@ -203,37 +203,37 @@
                             </td>
                             <td>
                                 <div>
-                                    <label for="chlg-patient-race">RACE:</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-white">
-                                    <label for="chlg-patient-race-white">White</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-black">
-                                    <label for="chlg-patient-race-black">Black</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-asian">
-                                    <label for="chlg-patient-race-asian">Asian</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-am-indian">
-                                    <label for="chlg-patient-race-am-indian">American Indian</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-alask">
-                                    <label for="chlg-patient-race-alask">Alaskan</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-pacific">
-                                    <label for="chlg-patient-race-pacific">Pacific Islander</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-unknown">
-                                    <label for="chlg-patient-race-unknown">Unknown</label> <br>
-                                    <input type="checkbox" name="chlg-patient-race" id="chlg-patient-race-other">
-                                    <label for="chlg-patient-race-other">OTHER : </label> <br>
-                                    <input type="text" name="chlg-patient-race" id="chlg-patient-race-other" >
+                                    <label for="patientRace">RACE:</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceWhite">
+                                    <label for="patientRaceWhite">White</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceBlack">
+                                    <label for="patientRaceBlack">Black</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceAsian">
+                                    <label for="patientRaceAsian">Asian</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceIndian">
+                                    <label for="patientRaceIndian">American Indian</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceAlask">
+                                    <label for="patientRaceAlaskan">Alaskan</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRacePacific">
+                                    <label for="patientRacePacific">Pacific Islander</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceUnknown">
+                                    <label for="patientRaceUnknown">Unknown</label> <br>
+                                    <input type="checkbox" name="patientRace" id="patientRaceOther">
+                                    <label for="patientRaceOther">OTHER : </label> <br>
+                                      <span id = "raceErr"></span>
                                 </div>
                             </td>
                             <td>
                                 <div>
-                                    <label for="chlg-patient-gs-partners">Gender of Sex Partner&lpar;s&rpar;</label> <br>
-                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-male">
-                                    <label for="chlg-patient-gs-partners-male">Male</label> <br>
-                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-female">
-                                    <label for="chlg-patient-gs-partners-female">Female</label> <br>
-                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-both">
-                                    <label for="chlg-patient-gs-partners-both">Both</label> <br>
-                                    <input type="checkbox" name="chlg-patient-gs-partners" id="chlg-patient-gs-partners-unknown">
-                                    <label for="chlg-patient-gs-partners-unknown">Unknown</label> <br>
+                                    <label for="patientSexPartners">Gender of Sex Partner&lpar;s&rpar;</label> <br>
+                                    <input type="checkbox" name="patientSexPartners" id="patientSexPartnersMale">
+                                    <label for="patientSexPartnersMale">Male</label> <br>
+                                    <input type="checkbox" name="patientSexPartners" id="patientSexPartnersFemale">
+                                    <label for="patientSexPartnersFemale">Female</label> <br>
+                                    <input type="checkbox" name="patientSexPartners" id="patientSexPartnersBoth">
+                                    <label for="patientSexPartnersBoth">Both</label> <br>
+                                    <input type="checkbox" name="patientSexPartners" id="patientSexPartnersUnknown">
+                                    <label for="patientSexPartnersUnknown">Unknown</label> <br> <span id = "genderOfSexPartnerErr"></span>
                                      
                                     
                                     
@@ -245,41 +245,41 @@
                             <td>5</td>
                             <td>
                                 <div>
-                                    <label for="chlg-patient-test-r">Test Result Type:</label> <br>
+                                    <label for="patientTestResult">Test Result Type:</label> <br>
                                     
-                                    <input type="checkbox" name="chlg-patient-test-r" id="chlg-patient-test-r-chla-pr">
-                                    <label for="chlg-patient-test-r-chla-pr">Chlamydia Positive Result</label> 
+                                    <input type="checkbox" name="patientTestResult" id="patientTestResultChlamydia">
+                                    <label for="patientTestResultChlamydia">Chlamydia Positive Result</label> 
                                     
-                                    <label for="chlg-patient-test-r-chla-pr-date">Date:</label> <br>
-                                    <input type="date" name="chlg-patient-test-r" id="chlg-patient-test-r-chla-pr-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy"> <br> 
+                                    <label for="patientTestResultChlamydiaDate">Date:</label> <br>
+                                    <input type="date" name="patientTestResult" id="patientTestResultChlamydiaDate" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy"> <br> 
 
-                                    <input type="checkbox" name="chlg-patient-test-r" id="chlg-patient-test-r-gonopr">
-                                    <label for="chlg-patient-test-r-gonopr">Gonorrhea Positive Results </label> <br>
+                                    <input type="checkbox" name="patientTestResult" id="patientTestResultGonorrhea">
+                                    <label for="patientTestResultGonorrhea">Gonorrhea Positive Results </label> <br>
                                     
-                                    <label for="chlg-patient-test-r-gonopr-date">Date:</label>  <br>
-                                    <input type="date" name="chlg-patient-test-r" id="chlg-patient-test-r-gonopr-date" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy">
+                                    <label for="patientTestResultGonoDate">Date:</label>  <br>
+                                    <input type="date" name="patientTestResult" id="patientTestResultGonoDate" pattern="\d{2} \d{2} \d{4}" title="Please enter a date in the format mm dd yyyy" placeholder="mm/dd/yyyy"> <span id="patientTestResultErr"></span>
                                 </div>
                                 
                             </td>
                             <td colspan="2">
                                 <div>
-                                    <label for="chlg-patient-prev-hivt">Previous Hiv Testing:</label> <br>
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-yes" value="yes">
-                                    <label for="chlg-patient-prev-hivt-yes">Yes</label> <br>
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-no" value="no">
-                                    <label for="chlg-patient-prev-hivt-no">No</label> <br>
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-unknown-1" value="unknown">
-                                    <label for="chlg-patient-prev-hivt-unknown-1">Unknown</label> <br>
+                                    <label for="patientPreviousHiv">Previous Hiv Testing:</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivYes" value="yes">
+                                    <label for="patientPreviousHivYes">Yes</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivNo" value="no">
+                                    <label for="patientPreviousHivNo">No</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivnknown1" value="unknown">
+                                    <label for="patientPreviousHivUnknown1">Unknown</label> <br> 
                                     
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-pos" value="Positive">
-                                    <label for="chlg-patient-prev-hivt-pos">Pos</label> <br>
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-neg" value="negative">
-                                    <label for="chlg-patient-prev-hivt-neg">Neg</label> <br>
-                                    <input type="checkbox" name="chlg-patient-prev-hivt" id="chlg-patient-prev-hivt-unknown-2" value="unknown">
-                                    <label for="chlg-patient-prev-hivt-unknown-2">Unknown</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivPos" value="Positive">
+                                    <label for="patientPreviousHivPos">Pos</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivNeg" value="negative">
+                                    <label for="patientPreviousHivNeg">Neg</label> <br>
+                                    <input type="checkbox" name="patientPreviousHiv" id="patientPreviousHivUnknown2" value="unknown">
+                                    <label for="patientPreviousHivUnknown2">Unknown</label> <br>
                                     <label for="chlg-patient-last-rtest">If yes, last result test was?</label> <br>
                                     <label for="chlg-patient-last-rtest-month-year">Month and year of last test</label> <br>
-                                    <input type="month" name="chlg-patient-last-rtest" id="chlg-patient-last-rtest-month-year" value="month and year">
+                                    <input type="date" name="patientPreviousHiv" id="chlg-patient-last-rtest-month-year" > <span id="patientPreviousHivErr"></span>
                                     </div>
                             </td>
                         </tr>
@@ -287,56 +287,56 @@
                             <td>6</td>
                             <td>
                                 <div>
-                              <label for="chlg-patient-rf-exam">REASON FOR EXAM :</label> <br>
-                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-symp">
-                              <label for="chlg-patient-rf-exam-symp">Symptomatic</label> <br>
-                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-routine">
-                              <label for="chlg-patient-rf-exam-routine">Routine Exam</label> <br>
-                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-tcure">
-                              <label for="chlg-patient-rf-exam-tcure">Test for Cure</label> <br>
-                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-ex-infect">
-                              <label for="chlg-patient-rf-exam-ex-infect">Exposed to Infection</label> <br>
-                              <input type="checkbox" name="chlg-patient-rf-exam" id="chlg-patient-rf-exam-preg">
-                              <label for="chlg-patient-rf-exam-preg">Pregnant</label>
+                              <label for="patientReasonExam">REASON FOR EXAM :</label> <br>
+                              <input type="checkbox" name="patientReasonExam" id="patientReasonExamSymptom">
+                              <label for="patientReasonExamSymptom">Symptomatic</label> <br>
+                              <input type="checkbox" name="patientReasonExam" id="patientReasonExamRoutine">
+                              <label for="patientReasonExamRoutine">Routine Exam</label> <br>
+                              <input type="checkbox" name="patientReasonExam" id="patientReasonExamCure">
+                              <label for="patientReasonExamCure">Test for Cure</label> <br>
+                              <input type="checkbox" name="patientReasonExam" id="patientReasonExamInfect">
+                              <label for="patientReasonExamInfect">Exposed to Infection</label> <br>
+                              <input type="checkbox" name="patientReasonExam" id="patientReasonExamPregnant">
+                              <label for="patientReasonExamPregnant">Pregnant</label> <span id="patientReasonExamErr"></span>
                                 </div>
                             </td>
                             <td>
                                 <div class="dianosis">
-                                    <label for="chlg-patient-diagnosis">DIAGNOSIS :</label> <br>
-                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-asymp">
-                                    <label for="chlg-patient-diagnosis-asymp">Asymptomatic</label> <br>
-                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-symp-un">
-                                    <label for="chlg-patient-diagnosis-symp-un">Symptomatic-Uncomplicated</label> <br>
-                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-pid">
-                                    <label for="chlg-patient-diagnosis-pid">Pelvic Inflammatory Disease</label> <br>
-                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-oph">
-                                    <label for="chlg-patient-diagnosis-oph">Ophthalmia/conjunctivitis</label> <br>
-                                    <input type="checkbox" name="chlg-patient-diagnosis" id="chlg-patient-diagnosis-dissem">
-                                    <label for="chlg-patient-diagnosis-dissem">Disseminated</label> 
+                                    <label for="patientDiagnosis">DIAGNOSIS :</label> <br>
+                                    <input type="checkbox" name="patientDiagnosis" id="patientDiagnosisAsymptomatic">
+                                    <label for="patientDiagnosisAsymptomatic">Asymptomatic</label> <br>
+                                    <input type="checkbox" name="patientDiagnosis" id="patientDiagnosisSymptomatic">
+                                    <label for="patientDiagnosisSymptomatic">Symptomatic-Uncomplicated</label> <br>
+                                    <input type="checkbox" name="patientDiagnosis" id="patientDiagnosisPelvic">
+                                    <label for="patientDiagnosisPelvic">Pelvic Inflammatory Disease</label> <br>
+                                    <input type="checkbox" name="patientDiagnosis" id="patientDiagnosisOphthalmia">
+                                    <label for="patientDiagnosisOphthalmia">Ophthalmia/conjunctivitis</label> <br>
+                                    <input type="checkbox" name="patientDiagnosis" id="patientDiagnosisDissem">
+                                    <label for="patientDiagnosisDissem">Disseminated</label> <span id="patientDiagnosisErr"></span>
                                 </div>
                             </td>
                             <td>
                                 <div>
                                     <div>
-                                        <label for="chlg-patient-sites">SITE&lpar;S&rpar; :</label> <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-cervix">
-                                        <label for="chlg-patient-sites-cervix">Cervix</label> <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-vaginal">
-                                        <label for="chlg-patient-sites-vaginal">Vaginal</label> <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-urethra">
-                                        <label for="chlg-patient-sites-urethra">Urethra</label> <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-rectum">
-                                        <label for="chlg-patient-sites-rectum">Rectum</label> <br>
+                                        <label for="patientSites">SITE&lpar;S&rpar; :</label> <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesCervix">
+                                        <label for="patientSitesCervix">Cervix</label> <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesVaginal">
+                                        <label for="patientSitesVaginal">Vaginal</label> <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesUrethra">
+                                        <label for="patientSitesUrethra">Urethra</label> <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesRectum">
+                                        <label for="patientSitesRectum">Rectum</label> <br>
                                     </div>
                                      <div>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-ocular">
-                                        <label for="chlg-patient-sites-ocular">Ocular</label>  <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-urine">
-                                        <label for="chlg-patient-sites-urine">Urine</label>  <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-pharynx">
-                                        <label for="chlg-patient-sites-ocular-pharynx">Pharynx</label>  <br>
-                                        <input type="checkbox" name="chlg-patient-sites" id="chlg-patient-sites-other">
-                                        <label for="chlg-patient-sites-other">Other:</label> <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesOcular">
+                                        <label for="patientSitesOcular">Ocular</label>  <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesUrine">
+                                        <label for="patientSitesUrine">Urine</label>  <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesPharynx">
+                                        <label for="patientSitesPharynx">Pharynx</label>  <br>
+                                        <input type="checkbox" name="patientSites" id="patientSitesOther">
+                                        <label for="patientSitesOther">Other:</label> <br> <span id="patientSitesErr"></span>
                                     </div>
                                    
                                 </div>
@@ -475,6 +475,7 @@
                 </table>
                  
                 <button type="submit" class="form-button">Save & Submit</button>
+                 
             </form>
         </div>
 
@@ -485,5 +486,6 @@
             <p>© 2024 CDC Standard Forms. All rights reserved.</p>
           </div>
     </footer>
+    <script src="../scripts/validatechlamagonoform.js"></script>
 </body>
 </html>

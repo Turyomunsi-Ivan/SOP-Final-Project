@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register New client</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -53,28 +54,34 @@
     <div class="col-9 forms-section client">
         <div>
             <h2>Register a New Client</h2>
-            <form action="">
+            <form action="" name="personalinfo" id="register" method="get" autocomplete="off" onsubmit="return validatepersonalinfo()">
                 
                 <div>
-                    <label for="f-name">First Name:</label>
-                    <input type="text" name="f-name" id="f-name" >
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" onblur="return validatefn()"><span id="firstnameErr"></span>
                 </div>
                 <div>
-                    <label for="l-name">Last Name:</label>
-                    <input type="text" name="l-name" id="l-name">
+                    <label for="middlename">Middle Name:</label>
+                    <input type="text" name="middlename" id="middlename" >
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname"><span id="lastnameErr"></span>
                 </div>
                 <div id="form-client-checkbox">
                     <label for="sex">Sex:</label> <br>
-                    <input type="checkbox" name="sex" id="sex-male" required>
-                    <label for="sex-male">Male</label> <br>
-                    <input type="checkbox" name="sex" id="sex-female" required>
-                    <label for="sex-female">Female</label> <br>
-                    <input type="checkbox" name="sex" id="sex-intersex" required>
-                    <label for="sex-intersex">Intersex</label>
+                    <input type="checkbox" name="sex" id="sexMale" >
+                    <label for="sexMale">Male</label> <br>
+                    <input type="checkbox" name="sex" id="sexFemale" >
+                    <label for="sexFemale">Female</label> <br>
+                    <input type="checkbox" name="sex" id="sexIntersex" >
+                    <label for="sexIntersex">Intersex</label>   <span id="sexErr"></span>
+                    
+                   
                 </div>
                 <div>
-                    <label for="Sex-orientation">Sexual Orientation</label>
-                     <select name="Sex-orientation" id="Sex-orientation"  required>
+                    <label for="sexorientation">Sexual Orientation</label>
+                     <select name="sexorientation" id="sexorientation"  >
                         <option  selected disabled>Select from this list </option>
                         <option value="heterosexual">Heterosexual</option>
                         <option value="homosexual">Homosexual</option>
@@ -87,21 +94,21 @@
                         <option value="polysexual">Polysexual</option>
                         <option value="skoliosexual">Skoliosexual</option>
                         <option value="graysexual ">Graysexual </option>
-                     </select>
+                     </select> <span id="sexualOrientationErr"></span>
                 </div>
                 <div>
-                    <label for="yearOfBirth">Year of Birth:</label>
-                    <input type="number" id="yearOfBirth" name="yearOfBirth" min="1900" max="2024" required  placeholder="Enter year of birth">
+                    <label for="dob">Year of Birth:</label>
+                    <input type="date" id="dob" name="dob" min="1900" max="2024"   placeholder="Enter year of birth"> <span id="dobErr"></span>
                      
                 </div>
                 <div>
-                    <label for="unique-id">Unique ID:</label>
-                    <input type="password" name="unique-id" id="unique-id" required placeholder="Create a Unique ID">
-                    <input type="password" name="unique-id" id="unique-id-confirm" required placeholder="Confirm Unique ID">
+                    <label for="uniqueid">Unique ID:</label>
+                    <input type="password" name="uniqueid" id="uniqueid"  placeholder="Create a Unique ID"> <span id="uniqueiErr"></span>
+                  
                      
                 </div>
                 <div>
-               <input type="submit" value="register"  id="register">  
+               <input type="submit" value="register"  name="submit" id="submit">  
             </div>
                    
             </form>
@@ -113,5 +120,9 @@
             <p>© 2024 CDC Standard Forms. All rights reserved.</p>
           </div>
     </footer>
+    
+     
+    <script src="../scripts/validatepersonalinfo.js"></script>
+    <script src="../scripts/localstorage.js"></script>
 </body>
 </html>
