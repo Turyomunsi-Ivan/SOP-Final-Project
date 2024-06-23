@@ -310,7 +310,29 @@ td {
 
 
 }
+ /* Risk factor page */
+ .risk_factor{
+    display: flex;
+    justify-content:space-evenly;
+    
+ }
+ #container1 ,#container2{
+    border: 2px solid lightblue;
+    width: 25vw;
+    height: 70vh;
+    margin: 3rem 0 3rem 0;
+    
+    padding: 1rem;
+   
 
+ }
+ #container1 p{
+    border: 1px solid black;
+    padding: .5rem;
+ }
+ #container2{
+    display: block;
+ }
 
 
 /* Style for text, number,tel,email and date inputs */

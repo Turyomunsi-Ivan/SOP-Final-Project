@@ -52,12 +52,31 @@
     </div>
     <div class="col-9 forms-section">
              <h2>Risk Factor</h2>
+             <h3>In the last 12 months, drag the options that apply</h3>
+           <section class="risk_factor">
+              
+            <div id="container1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="dragitem1">Had sex with males</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem2">Had sex with females</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem3">Victim of sexual assault</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem4">Homeless</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem5">Incarcerated</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem6">Possible exposure</p>
+                <p draggable="true" ondragstart="drag(event)" id="dragitem7">Routine screening</p>
+            </div>
+            <div id="container2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Drop here your options.
+            </div>
+           </section>
+
     </div>
+
     </section>
     <footer>
         <div class="footer-container">
             <p>© 2024 CDC Standard Forms. All rights reserved.</p>
           </div>
     </footer>
+    <script src="../scripts/drag.js"></script>
 </body>
 </html>
